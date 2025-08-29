@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ứng dụng đếm vật thể</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/logo.png" alt="An Sinh Logo">
+            <div class="made-in">Made in 2026</div>
+        </header>
+
+        <main>
+            <section id="login-page">
+                <h2>Đăng nhập</h2>
+                <input type="text" id="username" placeholder="Tài khoản (admin)">
+                <input type="password" id="password" placeholder="Mật khẩu (000000)">
+                <button id="login-btn">Đăng nhập</button>
+                <div class="contact-info">
+                    <p>Đăng ký: Gọi 0584 22 6789</p>
+                    <p>Liên hệ Zalo: 0912 235 987</p>
+                </div>
+            </section>
+
+            <section id="camera-page" style="display: none;">
+                <h2>Kết nối Camera</h2>
+                <video id="camera-stream" width="640" height="480" autoplay></video>
+                <canvas id="output-canvas" width="640" height="480"></canvas>
+                <div class="controls">
+                    <button id="start-btn">Bắt đầu đếm</button>
+                    <input type="file" id="upload-image" accept="image/*">
+                    <label for="upload-image">Tải ảnh mẫu</label>
+                </div>
+                <div id="results">
+                    <p>Vật thể bị khuất: <span id="hidden-objects">0</span></p>
+                    <p>Tam giác: <span id="triangles">0</span></p>
+                    <p>Vuông: <span id="squares">0</span></p>
+                    <p>Chữ nhật: <span id="rectangles">0</span></p>
+                    <p>Hình tròn: <span id="circles">0</span></p>
+                    <p>Vật thể theo ảnh mẫu: <span id="matched-objects">0</span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">© 2026</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

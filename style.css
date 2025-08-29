@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 960px;
+    background-color: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+.made-in {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.9em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#login-page {
+    text-align: center;
+}
+
+#login-page h2 {
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+#login-page input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 70%;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#login-page button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-page button:hover {
+    background-color: #4cae4c;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#camera-page {
+    text-align: center;
+}
+
+#camera-stream {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button, .controls input[type="file"] + label {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.controls button:hover, .controls input[type="file"] + label:hover {
+    background-color: #0056b3;
+}
+
+.controls input[type="file"] {
+    display: none;
+}
+
+#results {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+#results p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.3);
+}
